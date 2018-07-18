@@ -1,6 +1,6 @@
 # bsa-homework-7
 
 # installation
-npm install__
-npm run start__
+npm install 
+npm run start 
 browser -> localhost:4040
