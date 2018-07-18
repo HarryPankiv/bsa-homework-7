@@ -1,0 +1,73 @@
+h2 {
+  	text-align: center;
+}
+
+body, button {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	font-weight: 1.6;
+}
+
+button {
+	border: none;
+	box-shadow: none;
+	display: block;
+	margin: 10px auto;
+	padding: 8px 50px;
+	border-radius: 55px;
+	background-color: #3d3d3d;
+	color: white;
+}
+
+button:focus {
+	outline: none;
+}
+
+body {
+	background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(../resources/background.jpg);
+	background-size: 100%;
+}
+
+.main {
+   	display: flex;
+   	align-items: center;
+   	justify-content: space-around;
+   	flex-wrap: wrap;
+   	align-content: center;
+}
+
+.column {
+	padding: 10px;
+}
+
+.field{
+	margin-bottom: 15px;
+}
+
+#user-info{
+	height: 25px;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+#fighter2 {
+	transform: scale(-1, 1);
+}
+
+input {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #3d3d3d;
+	outline: none;
+	padding: 10px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	color: #3d3d3d;
+}
+
+#fight-log {
+	margin: 0 30%;
+}
