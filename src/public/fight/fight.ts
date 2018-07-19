@@ -9,6 +9,7 @@ export interface IFight {
 export class Fight implements IFight{
   	fighter1: IFighter;
   	fighter2: IFighter;
+  	point:  number[];
 
   	constructor() {
   		this.initializeFight();
@@ -25,10 +26,14 @@ export class Fight implements IFight{
 		const power1 = document.getElementById("power1") as HTMLInputElement;
 		const power2 = document.getElementById("power2") as HTMLInputElement;
 
+		const pointInput = document.getElementById("point") as HTMLInputElement;
+
 		fightButton.addEventListener('click', () => { 
 	  		this.fighter1 = new Fighter(name1.value, Number(health1.value), Number(power1.value));
 	  		this.fighter2 = new ImprovedFighter(name2.value, Number(health2.value), Number(power2.value));
-			this._startFight(this.fighter1, this.fighter2, 2.2, 2.4, 1.2);
+
+			this.point = pointInput.value.split(' ').map( el => Number(el));
+			this._startFight(this.fighter1, this.fighter2, ...this.point);
 		});
   	}
 

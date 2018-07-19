@@ -71,3 +71,9 @@ input {
 #fight-log {
 	margin: 0 30%;
 }
+
+.point {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
